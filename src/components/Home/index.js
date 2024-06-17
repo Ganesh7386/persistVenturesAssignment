@@ -6,7 +6,8 @@ const Home = ()=>{
     const [showInput , setShowInput] = useState(false);
     const [showCategories , setShowCategories] = useState(false);
 
-    return (<div className = "HomeContainer">
+    return (
+    <div className = "HomeContainer">
     <div className = "navBarContainer">
         <h1>Navbar</h1>
         <ul className = "navbarOptionsContainer">
@@ -28,7 +29,8 @@ const Home = ()=>{
     <div className = "allNewsCardsContainer">
         <h1>This is bottom container</h1>
     </div>
-</div>)
+</div>
+)
 
 }
 
