@@ -4,13 +4,16 @@ import {useState} from 'react';
 export const SearchAndCategoryContext = React.createContext({
     searchValue : "",
     category : "Business",
+    savedList : [],
     setSearchValue  : ()=>{},
-    setCategoryValue : ()=>{}
+    setCategoryValue : ()=>{},
+    addItemToSaveList : ()=> {}
 })
 
 export const SearchAndCategoryContextProvider = ({children})=> {
     const [searchValue , setSearchValue] = useState('')
     const [category , setCategory] = useState('Business')
+    const [savedList , setSavedList] = useState([])
 
     const handleSetSearchValue = (text)=> {
         setSearchValue(text);
@@ -20,8 +23,12 @@ export const SearchAndCategoryContextProvider = ({children})=> {
         setCategory(category);
     }
 
+    const handleSavingNews = (newsObj)=> {
+        setSavedList([...savedList , newsObj]);
+    }
+
     return (
-        <SearchAndCategoryContext.Provider value = {{searchValue , category , setSearchValue : handleSetSearchValue , setCategoryValue : handleSetCategoryValue}}>
+        <SearchAndCategoryContext.Provider value = {{searchValue , category ,savedList, setSearchValue : handleSetSearchValue , setCategoryValue : handleSetCategoryValue , addItemToSaveList : handleSavingNews}}>
             {children}
         </SearchAndCategoryContext.Provider>
     )
