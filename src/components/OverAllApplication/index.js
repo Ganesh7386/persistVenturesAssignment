@@ -14,11 +14,12 @@ const OverAllApplication = ()=>{
     <BrowserRouter>
     <SearchAndCategoryContextProvider>
     <Navbar/>
-    <Routes>
+    <h1>This is home container of react</h1>
+    {/* <Routes>
         <Route path = "/" element = {<HomeNews/>} />
         <Route path = "/saved" element = {<SavedRoute/>} />
         <Route path = "/news" element = {<DetailedNewsComp/>}/>
-    </Routes>
+    </Routes> */}
     </SearchAndCategoryContextProvider>
     </BrowserRouter>
 </div>

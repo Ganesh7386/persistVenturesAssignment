@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 function HomeNews() {
     const inputCategoryChangeContext = useContext(SearchAndCategoryContext)
-    const {setSearchValue , setCategoryValue , searchValue , category} = inputCategoryChangeContext;
+    const {searchValue , category} = inputCategoryChangeContext;
     const [newsList , setNewsList] = useState([]);
 
     useEffect(()=> {    
