@@ -6,7 +6,7 @@ import OverAllApplication from './components/OverAllApplication/index'
 function App() {
   return (
     <div className="App">
-      <OverAllApplication/>
+    <BrowserRouter><OverAllApplication/></BrowserRouter>
     </div>
    
   );

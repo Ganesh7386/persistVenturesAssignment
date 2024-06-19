@@ -1,6 +1,5 @@
 import './index.css';
-import { useContext } from 'react';
-import {Link , useHistory} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 // import {SearchAndCategoryContext} from '../SearchCategoryContext/index'
 
 
