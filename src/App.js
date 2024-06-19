@@ -5,9 +5,11 @@ import OverAllApplication from './components/OverAllApplication/index'
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
       <OverAllApplication/>
     </div>
+    </BrowserRouter>
    
   );
 }

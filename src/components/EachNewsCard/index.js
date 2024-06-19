@@ -36,10 +36,7 @@ function EachNewsCard({eachNewsDetailsObj}) {
             </div>
             <div className = "cardOptionsContainer">
                 <button onClick = {handleSavingItem} className = "saveBtn" type = "button">Save</button>
-                <Link to={{
-        pathname: '/news',
-        state: { data: eachNewsDetailsObj }
-      }}  ><button className = "fullDetailsBtn" type = "button">Full details</button></Link>
+                <Link to="/news" state = {eachNewsDetailsObj}  ><button className = "fullDetailsBtn" type = "button">Full details</button></Link>
             </div>
         </div>
         </li>
