@@ -15,9 +15,9 @@ const OverAllApplication = ()=>{
     <SearchAndCategoryContextProvider>
     <Navbar/>
     <Routes>
-        <Route exact path = "/" element = {<HomeNews/>} />
-        <Route exact path = "/saved" element = {<SavedRoute/>} />
-        <Route exact path = "/news" element = {<DetailedNewsComp/>}/>
+        <Route path = "/" element = {<HomeNews/>} />
+        <Route path = "/saved" element = {<SavedRoute/>} />
+        <Route path = "/news" element = {<DetailedNewsComp/>}/>
     </Routes>
     </SearchAndCategoryContextProvider>
     </BrowserRouter>
